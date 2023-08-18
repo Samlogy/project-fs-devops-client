@@ -1,0 +1,12 @@
+version: "2"
+services:
+  front-app:
+    container_name: front-app
+    image: sammmmmm/front-app:1.0
+    ports:
+      - "5001:80"
+
+networks:
+  default:
+    external:
+      name: project-network
